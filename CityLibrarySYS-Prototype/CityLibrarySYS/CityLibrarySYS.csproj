@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3D6FBB46-0164-4A6A-A02D-8EF6370F6DE3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CityLibrarySYS</RootNamespace>
+    <AssemblyName>CityLibrarySYS</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAddBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddBook.Designer.cs">
+      <DependentUpon>frmAddBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddLibrary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddLibrary.Designer.cs">
+      <DependentUpon>frmAddLibrary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCollectBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCollectBook.Designer.cs">
+      <DependentUpon>frmCollectBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGenrePopularity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGenrePopularity.Designer.cs">
+      <DependentUpon>frmGenrePopularity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLibraryPopularity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLibraryPopularity.Designer.cs">
+      <DependentUpon>frmLibraryPopularity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPayLateFine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPayLateFine.Designer.cs">
+      <DependentUpon>frmPayLateFine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegisterMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegisterMember.Designer.cs">
+      <DependentUpon>frmRegisterMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDeregisterMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeregisterMember.Designer.cs">
+      <DependentUpon>frmDeregisterMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainManu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainManu.Designer.cs">
+      <DependentUpon>frmMainManu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQueryLibrary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQueryLibrary.Designer.cs">
+      <DependentUpon>frmQueryLibrary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRemoveBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRemoveBook.Designer.cs">
+      <DependentUpon>frmRemoveBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReserveBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReserveBook.Designer.cs">
+      <DependentUpon>frmReserveBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReturnBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReturnBook.Designer.cs">
+      <DependentUpon>frmReturnBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateBook.Designer.cs">
+      <DependentUpon>frmUpdateBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateMember.Designer.cs">
+      <DependentUpon>frmUpdateMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="frmUpdateLibrary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateLibrary.Designer.cs">
+      <DependentUpon>frmUpdateLibrary.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmAddBook.resx">
+      <DependentUpon>frmAddBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddLibrary.resx">
+      <DependentUpon>frmAddLibrary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCollectBook.resx">
+      <DependentUpon>frmCollectBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGenrePopularity.resx">
+      <DependentUpon>frmGenrePopularity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLibraryPopularity.resx">
+      <DependentUpon>frmLibraryPopularity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPayLateFine.resx">
+      <DependentUpon>frmPayLateFine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegisterMember.resx">
+      <DependentUpon>frmRegisterMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDeregisterMember.resx">
+      <DependentUpon>frmDeregisterMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainManu.resx">
+      <DependentUpon>frmMainManu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQueryLibrary.resx">
+      <DependentUpon>frmQueryLibrary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRemoveBook.resx">
+      <DependentUpon>frmRemoveBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReserveBook.resx">
+      <DependentUpon>frmReserveBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReturnBook.resx">
+      <DependentUpon>frmReturnBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateBook.resx">
+      <DependentUpon>frmUpdateBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateMember.resx">
+      <DependentUpon>frmUpdateMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmUpdateLibrary.resx">
+      <DependentUpon>frmUpdateLibrary.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
